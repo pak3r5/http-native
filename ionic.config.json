@@ -1,5 +1,13 @@
 {
   "name": "login",
-  "integrations": {},
-  "type": "angular"
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "proxies": [
+    {
+      "path":"/login",
+      "proxyUrl":"http://10.2.70.30:8082/services/rest/OrderTableServiceV1/listDevices"
+    }
+  ]
 }
